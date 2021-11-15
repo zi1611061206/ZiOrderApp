@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/white_item_format"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_title_lv1"
+        android:textAlignment="center"
+        android:text="@string/search_dishes"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_view"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_view"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_search_dishes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/space_view"
+            android:drawablePadding="@dimen/space_view"
+            android:hint="@string/fill_drinks_search"
+            android:drawableStart="@drawable/search"
+            android:maxLength="30"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_search_dishes"
+            android:layout_margin="@dimen/space_view"
+            android:background="@color/gray"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_title_lv3"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="@string/search"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

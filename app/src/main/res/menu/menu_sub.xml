@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/account"
+        android:id="@+id/item_menu_account"
+        android:icon="@drawable/account"
+        app:showAsAction="always"
+        android:orderInCategory="2"/>
+    <item
+        android:title="@string/setting"
+        android:id="@+id/item_menu_setting"
+        android:icon="@drawable/setting"
+        app:showAsAction="never"
+        android:orderInCategory="3"/>
+    <item
+        android:title="@string/exit"
+        android:id="@+id/item_menu_exit"
+        android:icon="@drawable/exit"
+        app:showAsAction="never"
+        android:orderInCategory="4"/>
+
+</menu>

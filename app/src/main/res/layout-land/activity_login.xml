@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/image_logo_login"
+            android:background="@drawable/unnamed"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_login_title"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_title_lv1"
+            android:textAlignment="center"
+            android:text="@string/login_title"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_view"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imagebutton_scan_user"
+            android:layout_gravity="center"
+            android:src="@drawable/qrcode"
+            android:layout_margin="@dimen/space_view"
+            android:background="@drawable/round_button_format"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_title_lv3"
+            android:textAlignment="center"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_username_login"
+            android:hint="@string/username"
+            android:layout_margin="@dimen/space_view"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="@dimen/space_view"
+            android:inputType="textPersonName"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_password_login"
+            android:hint="@string/password"
+            android:layout_margin="@dimen/space_view"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="@dimen/space_view"
+            android:inputType="textPassword"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_login"
+            android:layout_margin="@dimen/space_view"
+            android:background="@drawable/green_button_format"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_title_lv3"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="@string/login"/>
+
+    </LinearLayout>
+
+</LinearLayout>

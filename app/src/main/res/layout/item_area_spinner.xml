@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/textview_area_name_item_spinner"
+    android:layout_margin="@dimen/padding_view"
+    android:padding="@dimen/padding_view"
+    android:clickable="false"
+    android:textColor="@color/black"
+    android:textSize="@dimen/font_title_lv3"
+    android:textAllCaps="false"
+    android:text="@string/area_name"/>

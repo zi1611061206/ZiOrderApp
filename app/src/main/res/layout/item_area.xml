@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_item_area"
+        android:layout_margin="@dimen/padding_view"
+        android:background="@drawable/orange_item_format"
+        android:focusable="false"
+        android:clickable="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_title_lv3"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:text="@string/area_name"/>
+
+</LinearLayout>

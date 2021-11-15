@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_qrcode"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_title_lv1"
+            android:textAlignment="center"
+            android:text=""
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_view"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_qrcode_order"
+            android:layout_margin="@dimen/space_view"
+            android:background="@drawable/green_button_format"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_title_lv3"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="@string/order"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_qrcode_pay"
+            android:layout_margin="@dimen/space_view"
+            android:background="@drawable/green_button_format"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_title_lv3"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="@string/pay"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_qrcode_cancel"
+            android:layout_margin="@dimen/space_view"
+            android:background="@drawable/gray_button_format"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_title_lv3"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="@string/cancel"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/imageview_avartar"
+            android:src="@drawable/user"
+            android:background="@drawable/white_item_format"
+            android:layout_margin="@dimen/padding_view"
+            android:layout_gravity="center"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_change_password"
+                android:layout_margin="@dimen/space_view"
+                android:background="@drawable/green_button_format"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_title_lv3"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:text="@string/change_password"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_manager"
+                android:layout_margin="@dimen/space_view"
+                android:background="@drawable/gray_button_format"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_title_lv3"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:text="@string/manager"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="2">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textview_username_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_view"
+                android:layout_weight="1"
+                android:background="@drawable/bluelight_item_format"
+                android:gravity="center"
+                android:text="@string/username"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_paragraph"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textview_fullname_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_view"
+                android:layout_weight="1"
+                android:background="@drawable/yellow_item_format"
+                android:gravity="center"
+                android:text="@string/fullname"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_paragraph"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textview_position_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_view"
+                android:layout_weight="1"
+                android:background="@drawable/bluelight_item_format"
+                android:gravity="center"
+                android:text="@string/position"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_paragraph"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textview_idcard_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_view"
+                android:layout_weight="1"
+                android:background="@drawable/yellow_item_format"
+                android:gravity="center"
+                android:text="@string/id_card"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_paragraph"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textview_address_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_view"
+                android:layout_weight="1"
+                android:background="@drawable/bluelight_item_format"
+                android:gravity="center"
+                android:text="@string/address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_paragraph"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textview_phone_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_view"
+                android:layout_weight="1"
+                android:background="@drawable/yellow_item_format"
+                android:gravity="center"
+                android:text="@string/phone_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_paragraph"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/yellow_item_format"
+                android:id="@+id/textview_username"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_paragraph"
+                android:text="@string/username"
+                android:layout_margin="@dimen/space_view"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/bluelight_item_format"
+                android:id="@+id/textview_fullname"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_paragraph"
+                android:text="@string/fullname"
+                android:layout_margin="@dimen/space_view"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/yellow_item_format"
+                android:id="@+id/textview_position"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_paragraph"
+                android:text="@string/position"
+                android:layout_margin="@dimen/space_view"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/bluelight_item_format"
+                android:id="@+id/textview_idcard"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_paragraph"
+                android:text="@string/id_card"
+                android:layout_margin="@dimen/space_view"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/yellow_item_format"
+                android:id="@+id/textview_address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_paragraph"
+                android:text="@string/address"
+                android:layout_margin="@dimen/space_view"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/bluelight_item_format"
+                android:id="@+id/textview_phone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_paragraph"
+                android:text="@string/phone"
+                android:layout_margin="@dimen/space_view"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_title_lv1"
+        android:textAlignment="center"
+        android:text="@string/add_dish"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/space_view"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_view"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_dishes_name_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_view"
+            android:drawableStart="@drawable/dishes"
+            android:drawablePadding="@dimen/space_view"
+            android:hint="@string/dishes_name"
+            android:inputType="textPersonName" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_dishes_price_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_view"
+            android:drawableStart="@drawable/price"
+            android:drawablePadding="@dimen/space_view"
+            android:hint="@string/dishes_price"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/spinner_Category"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/space_view"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_view"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/button_choose_image_dishes_dialog"
+            android:layout_margin="@dimen/space_view"
+            android:background="@drawable/green_button_format"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_title_lv3"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="@string/pick_image"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageview_dish_preview"
+            android:visibility="gone"
+            android:layout_margin="@dimen/space_view"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_error_add_dishes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_view"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_paragraph"
+            android:textStyle="italic" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_view"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/button_cancel_add_dishes_dialog"
+            android:layout_margin="@dimen/space_view"
+            android:background="@drawable/gray_button_format"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_title_lv3"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="@string/cancel"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/button_confrim_add_dishes_dialog"
+            android:layout_margin="@dimen/space_view"
+            android:background="@drawable/green_button_format"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_title_lv3"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="@string/add"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

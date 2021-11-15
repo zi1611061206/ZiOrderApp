@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_dishes_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space_view" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_dishes_name_detail"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_title_lv1"
+            android:textAlignment="center"
+            android:text="@string/dishes_name"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space_view"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_dishes_price_detail"
+            android:textColor="@color/green_dark"
+            android:textSize="@dimen/font_title_lv3"
+            android:textAlignment="center"
+            android:text="@string/dishes_price"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space_view"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_dishes_description_detail"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_paragraph"
+            android:text="@string/dishes_desciptionb"
+            android:layout_margin="@dimen/space_view"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

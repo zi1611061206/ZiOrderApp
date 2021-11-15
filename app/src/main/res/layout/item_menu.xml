@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/layout_format"
+    android:layout_margin="@dimen/space_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_item_menu"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/white_item_format"
+        android:layout_margin="@dimen/padding_view"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_gravity="center" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_dishes_name_item_menu"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_title_lv3"
+        android:textAlignment="center"
+        android:text="@string/dishes_name"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginTop="@dimen/space_view"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_dishes_price_item_menu"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/font_paragraph"
+        android:textAlignment="center"
+        android:text="@string/dishes_price"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout_amount"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagebutton_amount_down"
+            android:background="@drawable/red_button_format"
+            android:src="@drawable/subtraction"
+            android:layout_margin="@dimen/space_view"
+            android:padding="@dimen/padding_view"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_dishes_amount_item_menu"
+            android:maxLength="2"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_paragraph"
+            android:textAlignment="center"
+            android:text="0"
+            android:textAllCaps="false"
+            android:inputType="number"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagebutton_amount_up"
+            android:background="@drawable/green_button_format"
+            android:src="@drawable/add"
+            android:layout_margin="@dimen/space_view"
+            android:padding="@dimen/padding_view"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_total_preview_item_menu"
+        android:drawableStart="@drawable/coins"
+        android:drawablePadding="@dimen/padding_view"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/font_paragraph"
+        android:textAlignment="center"
+        android:text="0"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_view"/>
+
+</LinearLayout>

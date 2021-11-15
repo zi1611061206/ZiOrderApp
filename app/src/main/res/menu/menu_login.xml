@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/setting"
+        android:id="@+id/item_menu_setting"
+        android:icon="@drawable/setting"
+        app:showAsAction="always"/>
+    <item
+        android:title="@string/contact"
+        android:id="@+id/item_menu_contact"
+        android:icon="@drawable/contact"
+        app:showAsAction="never"
+        android:orderInCategory="4"/>
+
+</menu>

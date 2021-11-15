@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_title_lv1">30sp</dimen>
+    <dimen name="font_title_lv2">36sp</dimen>
+    <dimen name="font_title_lv3">24sp</dimen>
+    <dimen name="font_paragraph">18sp</dimen>
+
+    <dimen name="space_view">10dp</dimen>
+    <dimen name="padding_view">4dp</dimen>
+    <dimen name="padding_view_horizon">30dp</dimen>
+
+    <dimen name="half_screen_vertical">360dp</dimen>
+</resources>

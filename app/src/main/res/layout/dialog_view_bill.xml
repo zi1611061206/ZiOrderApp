@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/white_item_format"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_bill_title"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_title_lv1"
+        android:textAlignment="center"
+        android:text="@string/bill"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_view"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_tablename_bill_dialog"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_title_lv1"
+        android:textAlignment="center"
+        android:text="@string/table_name"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_view"/>
+
+    <ListView
+        android:id="@+id/listview_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/padding_view"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_view"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/button_cancel_bill_dialog"
+            android:layout_margin="@dimen/space_view"
+            android:background="@drawable/gray_button_format"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_title_lv3"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="@string/cancel"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/button_pay_bill_dialog"
+            android:layout_margin="@dimen/space_view"
+            android:background="@drawable/green_button_format"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_title_lv3"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="@string/pay"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>
